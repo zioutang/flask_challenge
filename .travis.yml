@@ -1,9 +1,10 @@
 language: python
 python:
-  - "2.7"
-# command to install dependencies
+- '2.7'
 install:
-  - pip install -r requirements.txt
-# command to run tests
+- pip install -r requirements.txt
 script:
-  - python test.py
+- python test.py
+deploy:
+  api_key:
+    secure: frxrt6tJRiOTPdwQ0BQhPoTjzqe3LlDMImmKS27e3bYidRbinyOSnrHkPTYmAtp2lF2+uKHTLqNWWLVHJZ7tWOMtngqHng4Zlbi2zIGBmKuajwREAHbYOAIXkeeU/thRYr1HOlupS/yQuDZB5EtWu80NrE3yOM3hYveL+CAQKEJsAaBl6HszPUtx1Z1R8ZsP4CENkW0o323Zzr5v9v5Ez3UPQzQWi4GRw4aje4J9sBR+adHDKEktXVKpMv0KBEsz/rAdwSscXl8mnGZ4MGLkQ/bHpcZsWyHM6iaHPohdEcL6LdSwVCfWnngHXbrWXoG+oEv6M7gpe3eu9MRNaJFtEYBbu7LuCxPvXl/6IyVwCmvdtIZwVHCXD56aHVDZNfJhJymS+Jirbi1EqhR2AC0kMWCD+3qgBjCdCQr5q335MdQ2iKcbl1gmNRJ9H33ZQGu2uJy524Wqi+G8eMpP3q4Tgg4I+21XptrM5O+GWKU2Jr9CCIjUvvDqXXDhlNqLh/W+toVBb/3gkxlTQbh6CcSIrxjFA6+IcDyZ4NvChdG5yBmL+SFL28vxcdSFd+/d0oR2WtyjyHvzoHswPQ2IcSxuVWYfzzn8L5HvFP7Bylxta48EIun6HryHgmsZOfmGHCOuoNrg/Ld5FBVIXgN3t53UyqRRgkTzi9dIYLVKsi6bHlw=
