@@ -8,10 +8,6 @@ APP_ROOT = os.path.dirname(os.path.abspath(__file__))
 def index():
     return render_template("upload.html")
 
-@app.route('/success/<name>', methods=["POST"])
-def success(name):
-   return 'welcome %s' % name
-
 @app.route("/upload", methods=["POST"])
 def upload():
     target = os.path.join(APP_ROOT, 'images/')
@@ -32,10 +28,8 @@ def upload():
         upload.save(destination)
     return render_template("image.html", image_name=filename)
 
-@app.route('/upload/<filename>', methods=["POST"])
+@app.route('/upload/<filename>')
 def send_image(filename):
-    print(send_from_directory("images", filename));
-    print(request.form);
     return send_from_directory("images", filename)
 
 if __name__ == "__main__":
